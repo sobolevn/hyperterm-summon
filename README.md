@@ -1,10 +1,10 @@
-# hyperterm-summon
+# hyper-summon
 
-Summon your Hyperterm windows with a system-wide hotkey. In a multi-window situation, hyperterm-summon will remember which window was active last and restore focus to it. If HyperTerm is already active when the hotkey is pressed, your terminal windows will be hidden and (on Mac OS only) your previously-active application will regain focus.
+Summon your Hyper windows with a system-wide hotkey. In a multi-window situation, hyper-summon will remember which window was active last and restore focus to it. If Hyper is already active when the hotkey is pressed, your terminal windows will be hidden and (on Mac OS only) your previously-active application will regain focus.
 
 ## Install
 
-1. Add `hyperterm-summon` to your plugins array in `~/.hyperterm.js`.
+1. Add `hyper-summon` to your plugins array in `~/.hyper.js`.
 2. Add a `summonShortcut` entry inside the `config` object and set the value to the shortcut you want to use (see [Electron Accelerators](https://github.com/electron/electron/blob/master/docs/api/accelerator.md) for valid shortcuts)
 
 ```js
@@ -14,7 +14,7 @@ module.exports = {
     summonShortcut: 'Alt+Super+O'
   },
   plugins: [
-    'hyperterm-summon'
+    'hyper-summon'
   ]
 }
 ```
